@@ -27,7 +27,12 @@ public class Agenda {
         count++;
         return contacto;
     }
-
+    /**
+     * Añade un objeto contacto a la Agenda
+     * @param contacto objeto contacto que se quiere añadir
+     * @return devuelve contacto añadido si se realiza corectamente o excepción
+     * @throws ContactoRepetidoException excepción expecifica programada en el paquete exception
+     */
     public Contacto eliminarContacto(String email) { 
         Contacto contacto = buscarContacto(email);
         if (contacto != null) {
